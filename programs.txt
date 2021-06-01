@@ -1,0 +1,154 @@
+// ---ONE - Basic --- //
+// package main
+
+// // Imports are done this way
+// import "fmt"
+
+// func main() {
+// 	fmt.Println("hi abhi!")
+// }
+/////////////////////////////////////////////////////
+
+// ---TWO - If and Else, Variable declaration --- //
+// package main
+
+// // Imports are done this way
+// import "fmt"
+
+// func main() {
+// 	// Variables
+// 	var a string
+
+// 	// using := to declare a variable
+// 	b := "hi"
+
+// 	b = "abhi"
+// 	if b == "abhi" {
+// 		fmt.Println("b is hi!")
+// 	} else {
+// 		fmt.Println("b is not hi")
+// 	}
+
+// 	if a == "" {
+// 		fmt.Println("Hehe")
+// 	}
+// }
+/////////////////////////////////////////////////////
+
+// ---THREE - For and While loops --- //
+// package main
+
+// import "fmt"
+
+// // Imports are done this way
+
+// func main() {
+// 	// For Loop
+// 	sum := 0
+// 	for i := 1; i < 5; i++ {
+// 		sum += 1
+// 	}
+// 	fmt.Println("Sum is:", sum)
+
+// 	// While Loop
+// 	// There is no "while" in Go, a For with only the stopping condition is while loop
+// 	n := 1
+// 	for n < 5 {
+// 		n *= 2
+// 	}
+// 	fmt.Println("The result is:", n)
+// 	// // Infinite Loop
+// 	// for {
+// 	// 	sum++
+// 	// }
+// }
+
+/////////////////////////////////////////////////////
+
+// // ---FOUR - Arrays and operations on arrays --- //
+// package main
+
+// import "fmt"
+
+// // Imports are done this way
+
+// func main() {
+// 	// Arrays - fixed sized
+// 	a := [5]int{1, 2, 3, 4, 5} // Define and populate
+// 	a[1] = 25
+// 	fmt.Println("a is:", a)
+
+// 	var b [5]int // Declare then initialize
+// 	b[0] = 10
+// 	b[1] = 20
+// 	b[2] = 30
+// 	b[3] = 40
+// 	b[4] = 50
+// 	fmt.Println("b is:", b)
+
+// 	// Slice - dynamic sized array
+// 	var c []int // 1
+// 	fmt.Println("Empty Array:", c)
+
+// 	c = []int{2, 4, 6, 8, 10} // 2
+// 	fmt.Println("Even Elements in the slice", c)
+
+// 	d := []int{1, 3, 5, 7, 9} // 3
+// 	fmt.Println("Odd Elements in the slice", d)
+
+// 	e := make([]int, 4) // 4
+// 	e = append(e, 50, 60)
+// 	fmt.Println("The slice:", e)
+
+// 	e[2] = e[len(e)-1] // Manipulating the arrays
+// 	fmt.Println("e:", e)
+// 	fmt.Println("e(3-5)", e[2:5])
+
+// 	// Range
+// 	for k, v := range e {
+// 		fmt.Printf("%d is %d\n", k, v)
+// 	}
+
+// }
+
+/////////////////////////////////////////////////////
+
+// // ---FIVE - Maps --- //
+// package main
+
+// import "fmt"
+
+// // Imports are done this way
+
+// var sampleMap map[string]int
+
+// func main() {
+// 	sampleMap = map[string]int{
+// 		"Chandler": 23,
+// 		"Joey":     24,
+// 	}
+
+// 	currency := map[string]string{
+// 		"USD": "US Dollars",
+// 		"INR": "Indian Rupee",
+// 		"AUD": "Australian Dollars",
+// 	}
+
+// 	// a. Adding to the map
+// 	currency["EU"] = "Euros"
+// 	fmt.Println("Currency with Euros added:\n", currency)
+
+// 	// b. Removing from the map
+// 	delete(currency, "AUD")
+// 	fmt.Println("Currency with Australian dollars removed:\n", currency)
+
+// 	// c. Replacing one entry with another
+// 	currency["EU"] = "Pounds"
+// 	fmt.Println("Currency exchanged (No pun intended lol):\n", currency)
+
+// 	// Ranging through the map
+// 	for key, value := range currency {
+// 		fmt.Printf("%v might be equal to %v\n", key, value)
+// 	}
+
+// }
